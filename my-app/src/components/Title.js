@@ -1,6 +1,6 @@
 const Title = () => {
   return (
-    <h1>Music Library App</h1>
+    <h1>My Music Library</h1>
   );
 };
 
