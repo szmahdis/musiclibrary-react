@@ -1,6 +1,8 @@
 import './App.css';
-import Title from './components/Title';
-import SongList from './components/SongList';
+import Header from './components/Header';
+import TitleList from './components/TitleList';
+import ArtistList from './components/ArtistList';
+import AlbumList from './components/AlbumList';
 
 const songs = [
   {
@@ -37,8 +39,10 @@ const songs = [
 function App() {
   return (
     <div className="App">
-      <Title></Title>
-      <SongList songs={songs}></SongList>
+      <Header></Header>
+      <TitleList songs={songs}></TitleList>
+      <ArtistList songs={songs}></ArtistList>
+      <AlbumList songs={songs}></AlbumList>
     </div>
   );
 }

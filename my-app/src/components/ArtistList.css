@@ -1,0 +1,4 @@
+.ArtistList {
+    display: grid;
+    justify-content: start;
+}
