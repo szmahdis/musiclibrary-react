@@ -1,0 +1,60 @@
+
+:root {
+    --background-color:#FCFCFC;
+    --primary-color:#0077FF;
+    --secondary-color: #EBEBEB;
+    --text-color: #333333;
+    --play-button-color: #0077FF;
+
+}
+
+.toggle-container {
+    background-color: var(--background-color);
+    display:flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: 20px;
+}
+
+.toggle-container .label{
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius:50px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:4px;
+    position: relative;
+    height:20px;
+    width:50px;
+    transform:scale(1)
+}
+
+.toggle-container .label .ball {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top:2.5px;
+    left:4px;
+    height: 22px;
+    width:22px;
+    transition-duration: 1s;
+}
+
+.checkbox:checked + .label .ball {
+    transform:translateX(30px);
+}
+
+.toggle-container .checkbox {
+    opacity: 0;
+}
+
+
+.fa-moon {
+    color: var(--primary-color);
+}
+
+.fa-sun {
+    color: var(--primary-color);
+}

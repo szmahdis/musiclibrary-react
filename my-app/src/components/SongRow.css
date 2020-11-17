@@ -43,6 +43,7 @@
 .song.row button {
 	width:60px;
 	height:60px;
+    outline:none;
 	padding-left: 10px;
 	border: 6px solid var(--play-button-color);
 	border-radius: 50%;
@@ -51,7 +52,7 @@
 	text-decoration:none;
     background-color: var(--secondary-color);
 	font-size:13px;
-	transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .song.row button:hover {
