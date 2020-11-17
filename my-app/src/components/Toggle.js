@@ -3,6 +3,7 @@ import './../font-awesome/css/all.min.css'
 
 
 const Toggle = () => {
+    // Enter JS code here
     return(
         <div className="toggle-container">
             <input  type="checkbox" className="checkbox" id="darkmode-toggle" />

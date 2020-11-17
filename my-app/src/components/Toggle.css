@@ -14,6 +14,7 @@
     justify-content: flex-end;
     align-content: flex-end;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .toggle-container .label{
