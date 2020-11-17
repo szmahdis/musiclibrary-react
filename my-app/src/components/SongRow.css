@@ -15,8 +15,14 @@
     column-gap: 10px;
     align-items: center;
     justify-items: center;
-    /* width:fit-content; */
 }
+
+.song.row {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-family: londrina-thin;
+}
+
 .song.row * {
     margin: 5px;
 }
@@ -26,6 +32,7 @@
 .song.row *:last-child {
     margin-right: 0;
 } 
+
 
 .cover-img {
     object-fit:cover;
@@ -51,4 +58,10 @@
 	background-color: var(--secondary-color);
 	box-shadow: 0px 0px 10px var(--primary-color);
 	text-shadow: 0px 0px 10px var(--primary-color);
+}
+
+@font-face {
+    font-family: 'londrina-thin';
+    src: url(../font/LondrinaSolid-Light.ttf);
+    font-style: normal;
 }

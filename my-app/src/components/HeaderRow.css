@@ -1,0 +1,22 @@
+.header.row {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 1350px;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    /* width:fit-content; */
+}
+
+.header {
+    font-family: londrina-black;
+    color: var(--text-color);
+    border-bottom:4px solid var(--primary-color);
+}
+
+
+@font-face {
+    font-family: 'londrina-black';
+    src: url(../font/LondrinaSolid-Black.ttf);
+    font-style: normal;
+    /* font-weight: 300; */
+}

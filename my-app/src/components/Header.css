@@ -1,8 +1,16 @@
 .Header {
    display: flex;
+   justify-content: center;
    color:  #333333;
+   font-family: londrina-black;
 }
 
 .Header:hover{
     color:#0077FF;
+}
+
+@font-face {
+    font-family: 'londrina-black';
+    src: url(../font/LondrinaSolid-Black.ttf);
+    font-style: normal;
 }
