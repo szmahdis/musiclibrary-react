@@ -1,3 +1,11 @@
+:root {
+    --primary-color:#0077FF;
+}
+
+body.dark-mode {
+    --primary-color: #ffdd40;
+  
+}
 .Header {
    display: flex;
    justify-content: center;
@@ -6,7 +14,7 @@
 }
 
 .Header:hover{
-    color:#0077FF;
+    color: var(--primary-color);
 }
 
 @font-face {

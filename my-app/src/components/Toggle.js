@@ -1,24 +1,35 @@
 import './Toggle.css';
 import './../font-awesome/css/all.min.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const Toggle = () => {
+    const [theme, setTheme] = useState(localStorage.getItem('theme')); 
+    useEffect(() => {
+        if (theme === 'dark-mode') {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }, [theme]) 
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
     const onToggleHandler = () => {
-        // setTheme()
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light');
-        
+        setTheme((value) => {
+            if (value === 'dark-mode') {
+                return 'light-mode';
+            } else {
+                return 'dark-mode';
+            }
+        });
     };
 
-    const [theme, setTheme] = useState(localStorage.getItem('theme')); 
-    // if (localStorage.getItem('theme') === 'dark-mode') {
-    //         document.body.classList.toggle('dark-mode');
-    //         toggleButton.checked = true;
-    // };
+    
     return(
         <div className="toggle-container">
-            <input  type="checkbox" className="checkbox" id="darkmode-toggle" onChange={onToggleHandler} checked={theme === 'light-mode'} />
+            <input  type="checkbox" className="checkbox" id="darkmode-toggle" onChange={onToggleHandler} checked={theme === 'dark-mode'} />
             <label htmlFor="darkmode-toggle" className="label">
             <i className="fas fa-sun"></i>
             <i className="fas fa-moon"></i>
@@ -29,17 +40,3 @@ const Toggle = () => {
 }
 
 export default Toggle;
-
-// // Toggle button
-// const toggleButton = document.getElementById('darkmode-toggle')
-
-// toggleButton.addEventListener('change', () => {
-//     document.body.classList.toggle('dark-mode');
-//     localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark-mode' : 'dark');
-
-// })
-
-// if (localStorage.getItem('theme') === 'dark-mode') {
-//     document.body.classList.toggle('dark-mode');
-//     toggleButton.checked = true;
-// }

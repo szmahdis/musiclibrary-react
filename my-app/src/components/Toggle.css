@@ -5,7 +5,6 @@
     --secondary-color: #EBEBEB;
     --text-color: #333333;
     --play-button-color: #0077FF;
-    
 }
 
 body {
@@ -62,7 +61,7 @@ body.dark-mode {
 
 .toggle-container .checkbox {
     margin-top: 10px;
-    opacity: 20;
+    opacity: 0;
 }
 
 
