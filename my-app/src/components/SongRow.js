@@ -7,7 +7,7 @@ const SongRow = (props) => {
 
     return (
         <div className="song row">
-            <button className="play-button" onClick={() => history.push(`/song?id=${props.song.id}`)}> <i className="fa fa-play fa-2x"></i></button>
+            <button className="play-button" onClick={() => history.push(`/song?id=${props.song._id}`)}> <i className="fa fa-play fa-2x"></i></button>
             <img className="cover-img" src={`https://musiclibrary-server.herokuapp.com/images/${props.song.cover}`} alt="img"/>
             <span>{props.song.artist}</span>
             <span>{props.song.title}</span>
