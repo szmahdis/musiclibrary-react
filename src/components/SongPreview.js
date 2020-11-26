@@ -74,12 +74,12 @@ const SongPreview = (props) => {
 //investigate why server crashes
 return (
     <div className="container">
+        <img className="coverAlbum" id="coverAlbum" src={`https://musiclibrary-server.herokuapp.com/images/${song.cover}`} alt="coverAlbum" />
         <div className="textContainer">
             <p id="songTitle"> {song.title} </p>
             <p id="artistName"> {song.artist}</p>
         </div>
         <div className="action-bar">
-            <img className="image" id="coverAlbum" src={`https://musiclibrary-server.herokuapp.com/images/${song.cover}`} alt="coverAlbum" />
             <button className="fav-btn"><i className="fas fa-heart"></i></button>
             <button className="back-btn"><i className="fas fa-backward"></i></button>
             <button className="play-btn" id="play-btn"> <i className="fas fa-play"></i> </button>
