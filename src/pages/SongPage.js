@@ -20,7 +20,7 @@ function SongPage() {
               }
           }
       })
-  }, []);
+  }, [id]);
 
   return (
     <div className="SongPage">
