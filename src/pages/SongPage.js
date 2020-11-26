@@ -1,4 +1,5 @@
 import Toggle from './../components/Toggle.js';
+import HomeButton from './../components/HomeButton.js';
 import SongPreview from './../components/SongPreview.js';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react'
@@ -24,7 +25,10 @@ function SongPage() {
 
   return (
     <div className="SongPage">
+      <div className= "Header" style={{display:'flex', justifyContent: 'space-between'}}>
+      <HomeButton></HomeButton>
       <Toggle></Toggle>
+      </div>
       {
         data ? <SongPreview song={data}></SongPreview> : <div> Loading ... </div>
       }

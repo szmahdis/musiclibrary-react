@@ -36,7 +36,7 @@ body.dark-mode {
     cursor:pointer;
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:4px;
     position: relative;
     height:20px;
