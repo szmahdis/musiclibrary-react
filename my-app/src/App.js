@@ -14,7 +14,7 @@ export default function App() {
         <Route exact path="/">
           <MainPage></MainPage>
         </Route>
-        <Route path="/song">
+        <Route path="/song/:id">
           <SongPage></SongPage>
         </Route>
       </Switch>
