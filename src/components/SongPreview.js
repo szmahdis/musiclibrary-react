@@ -1,5 +1,6 @@
 import './SongPreview.css';
 import './../font-awesome/css/all.min.css';
+import ActionBar from '../components/ActionBar';
 
 const SongPreview = (props) => {
     const { song } = props;
@@ -12,11 +13,8 @@ return (
             <p id="artistName"> {song.artist}</p>
         </div>
         <div className="action-bar">
-            <button className="fav-btn"><i className="fas fa-heart"></i></button>
-            <button className="back-btn"><i className="fas fa-backward"></i></button>
-            <button className="play-btn" id="play-btn"> <i className="fas fa-play"></i> </button>
-            <button className="pause-btn" id="pause-btn"><i className="fas fa-pause"></i></button>
-            <button className="forward-btn"><i className="fas fa-forward"></i></button>
+
+        <ActionBar></ActionBar>
         </div>
     </div>
 );
