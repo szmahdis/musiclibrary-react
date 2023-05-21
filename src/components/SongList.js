@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from 'react'
 import SongRow from './SongRow.js';
 
@@ -5,7 +6,7 @@ import SongRow from './SongRow.js';
 const SongList = () => {
     const [data, setData] = useState([]);
 
-    const getSongs = () => fetch('https://musiclibrary-server.herokuapp.com/songs')
+    const getSongs = () => fetch('http://localhost:5000/songs')
         .then((res) => res.json())
 
     useEffect(() => {

@@ -1,3 +1,4 @@
+import React from "react";
 import './SongPreview.css';
 import './../font-awesome/css/all.min.css';
 import ActionBar from '../components/ActionBar';
@@ -7,7 +8,7 @@ const SongPreview = (props) => {
   
 return (
     <div className="container">
-        <img className="coverAlbum" id="coverAlbum" src={`https://musiclibrary-server.herokuapp.com/images/${song.cover}`} alt="coverAlbum" />
+        <img className="coverAlbum" id="coverAlbum" src={`http://localhost:5000/images/${song.cover}`} alt="coverAlbum" />
         <div className="textContainer">
             <p id="songTitle"> {song.title} </p>
             <p id="artistName"> {song.artist}</p>

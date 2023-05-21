@@ -1,3 +1,4 @@
+import React from "react";
 import Toggle from './../components/Toggle.js';
 import HomeButton from './../components/HomeButton.js';
 import SongPreview from './../components/SongPreview.js';
@@ -8,7 +9,7 @@ function SongPage() {
   const { id } = useParams();
   const [data, setData] = useState(null);
 
-  const getSongs = () => fetch('https://musiclibrary-server.herokuapp.com/songs')
+  const getSongs = () => fetch('http://localhost:5000/songs')
       .then((res) => res.json())
 
   useEffect(() => {

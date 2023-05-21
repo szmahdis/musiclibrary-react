@@ -1,3 +1,4 @@
+import React from "react";
 import './Toggle.css';
 import './../font-awesome/css/all.min.css'
 import { useEffect, useState } from 'react';
